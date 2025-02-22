@@ -1,6 +1,6 @@
 import berserk
 
-def get_games(api_token:str, user_name:str, game_count:int=100, rated_only:bool=True):
+def get_games(api_token:str, user_name:str, game_count:int=100, rated_only:bool=True) -> list[dict]:
   '''
   Scrapes games from the lichess API based on the defined preferences.
   Args:
@@ -61,3 +61,5 @@ def get_games(api_token:str, user_name:str, game_count:int=100, rated_only:bool=
         if j >= len(check_opening) or j >= len(unique_opening) or unique_opening[j] != check_opening[j]:
           break
     game["similarity_steps"] = uniqueness_level
+
+  return games_list
