@@ -1,0 +1,8 @@
+# project specifics
+
+*.txt
+
+# python specifics
+
+__pycache__/
+*.pyc
