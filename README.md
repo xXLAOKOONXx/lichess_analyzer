@@ -35,7 +35,7 @@ In order to use the lichess API, you need a token.
 You can generate your own one on [https://lichess.org/account/oauth/token](https://lichess.org/account/oauth/token).  
 The token does not need any write access, the default token configuration is enough.
 
-You can enter your token in [api_token.txt](./lichess_analyzer/notebook/api_token.txt) so that is less likely to be shared involuntarily.
+You can enter your token in in a file called `api_token.txt` so that is less likely to be shared involuntarily as txt files are in `.gitignore`.
 
 ### Run the notebook
 
